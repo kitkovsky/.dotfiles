@@ -12,6 +12,7 @@ require("nvim-treesitter.configs").setup({
 		"json",
 		"graphql",
 		"yaml",
+    "bash",
 	},
 
 	sync_install = true,
