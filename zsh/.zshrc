@@ -92,10 +92,10 @@ source $ZSH/oh-my-zsh.sh
 PATH=$PATH:~/.dotfiles
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:/usr/local/go/bin
-PATH=$PATH:~/go/bin
+PATH=$PATH:~/personal/go/bin
 PATH=$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin
 PATH=$PATH:~/WebStorm-221.5921.27/bin
-PATH=$PATH:~/lua-language-server/bin
+PATH=$PATH:~/personal/lua-language-server/bin
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -120,7 +120,7 @@ alias ranger=". ranger"
 alias vim="nvim"
 alias gs="git status"
 alias lg="lazygit"
-alias luamake="/home/kitkovsky/lua-language-server/3rd/luamake/luamake"
+alias luamake="/home/kitkovsky/personal/lua-language-server/3rd/luamake/luamake"
 
 # p10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
