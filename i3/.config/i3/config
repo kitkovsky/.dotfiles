@@ -152,8 +152,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # assign workspaces
 assign [class="kitty"] $ws1
 for_window [class="kitty"] move to workspace number $ws1
-assign [class="jetbrains-webstorm"] $ws3
-for_window [class="jetbrains-webstorm"] move to workspace number $ws3
+assign [class="DBeaver"] $ws3
+for_window [class="DBeaver"] move to workspace number $ws3
 assign [class="Insomnia"] $ws3
 for_window [class="Insomnia"] move to workspace number $ws3
 assign [class="Slack"] $ws4
