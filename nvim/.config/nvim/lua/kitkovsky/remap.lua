@@ -1,9 +1,5 @@
 local nnoremap = require("kitkovsky.keymap").nnoremap
-local inoremap = require("kitkovsky.keymap").inoremap
 local vnoremap = require("kitkovsky.keymap").vnoremap
-
--- fancy escape
-inoremap("jk", "<Esc>")
 
 -- better tabbing
 vnoremap("<", "<gv")
