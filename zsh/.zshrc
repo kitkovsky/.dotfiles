@@ -125,3 +125,5 @@ alias luamake="/home/kitkovsky/personal/lua-language-server/3rd/luamake/luamake"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+set -o vi
