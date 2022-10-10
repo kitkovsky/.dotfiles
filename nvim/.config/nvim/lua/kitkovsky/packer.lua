@@ -20,7 +20,7 @@ return require("packer").startup(function(use)
 		end,
 	})
 	use("nvim-treesitter/playground")
-  use("nvim-treesitter/nvim-treesitter-context")
+	use("nvim-treesitter/nvim-treesitter-context")
 	use("neovim/nvim-lspconfig")
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-buffer")
