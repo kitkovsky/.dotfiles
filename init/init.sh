@@ -6,8 +6,8 @@ xrandr --output DisplayPort-0 --set TearFree on
 xrandr --output eDP --set TearFree on
 setxkbmap -layout pl
 
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
+# eval "$(ssh-agent -s)"
+# ssh-add ~/.ssh/id_ed25519
 
 xmodmap -e "clear lock"
 xmodmap -e "keycode 9 = grave asciitilde Escape"
