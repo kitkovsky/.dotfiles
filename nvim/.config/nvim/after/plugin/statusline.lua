@@ -1,4 +1,3 @@
-local Worktree = require("git-worktree")
 local path = require("plenary.path").path
 
 local write_count = 0
@@ -75,12 +74,6 @@ local function harpoon_status()
 
 	return string.format("H:%s", status)
 end
-
-Worktree.on_tree_change(function(op)
-	if op == Worktree.Operations.Switch then
-		get_git_info(true)
-	end
-end)
 
 local statusline = "%%-20.80(%s%%) | %%-30.60(%s%%) | %%-20.20(%s%%) | %%-6.6(%s%%)%%-30.70(%s%%)"
 function StatusLine()
