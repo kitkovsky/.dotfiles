@@ -11,7 +11,6 @@ require("lspconfig").tailwindcss.setup({ capabilities = capabilities })
 require("lspconfig").eslint.setup({ capabilities = capabilities })
 require("lspconfig").solargraph.setup({ capabilities = capabilities })
 require("lspconfig").graphql.setup({ capabilities = capabilities })
--- require("lspconfig").yamlls.setup({ capabilities = capabilities })
 require("lspconfig").sumneko_lua.setup({
 	settings = {
 		Lua = {
@@ -30,6 +29,7 @@ require("lspconfig").sumneko_lua.setup({
 		},
 	},
 })
+require("lspconfig").rust_analyzer.setup({ capabilities = capabilities })
 
 require("lsp_signature").setup()
 
