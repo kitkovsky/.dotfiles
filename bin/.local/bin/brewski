@@ -1,0 +1,14 @@
+#!/usr/bin/env zsh
+
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+echo -e "${BLUE}================ APT ================"
+sudo apt update
+sudo apt upgrade -y
+sudo apt autoclean
+sudo apt autoremove
+echo '\n'
+
+echo -e "${BLUE}================ SNAP ================"
+sudo snap refresh
