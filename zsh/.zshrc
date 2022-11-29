@@ -119,6 +119,7 @@ alias vim="nvim"
 alias gs="git status"
 alias lg="lazygit"
 alias luamake="/home/kitkovsky/personal/lua-language-server/3rd/luamake/luamake"
+alias please-help-i-dropped-a-very-important-stash="git log --graph --oneline --decorate --all \$( git fsck --no-reflog | awk '/dangling commit/ {print \$3}' )"
 
 # p10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
