@@ -49,4 +49,6 @@ return require("packer").startup(function(use)
 	use("ThePrimeagen/harpoon")
 
 	use("sakshamgupta05/vim-todo-highlight")
+
+  use { "catppuccin/nvim", as = "catppuccin" }
 end)

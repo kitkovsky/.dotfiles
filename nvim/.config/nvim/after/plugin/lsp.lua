@@ -36,7 +36,8 @@ require("lsp_signature").setup()
 local cfg = {
 	floating_window = false,
 	hint_enable = true,
-	hint_prefix = "🌱 ",
+	-- hint_prefix = "🌱 ",
+	hint_prefix = "❄️  ",
 }
 
 require("lsp_signature").on_attach(cfg)
