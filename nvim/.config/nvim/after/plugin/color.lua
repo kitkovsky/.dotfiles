@@ -15,7 +15,7 @@ if current_colorscheme == CATTPUCCIN then
 		background = {
 			dark = "macchiato",
 		},
-		transparent_background = true,
+		transparent_background = false,
 		integrations = {
 			cmp = true,
 			telescope = true,
