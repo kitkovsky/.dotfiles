@@ -33,3 +33,6 @@ nnoremap("Y", "y$")
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
 nnoremap("J", "mzJ`z")
+
+-- never press Q
+nnoremap("Q", "<nop>")

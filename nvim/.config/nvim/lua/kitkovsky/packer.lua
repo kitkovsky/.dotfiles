@@ -1,6 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
+vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
 	use("wbthomason/packer.nvim")
@@ -30,6 +31,7 @@ return require("packer").startup(function(use)
 	use("onsails/lspkind-nvim")
 
 	use("gruvbox-community/gruvbox")
+	use({ "catppuccin/nvim", as = "catppuccin" })
 	use("airblade/vim-gitgutter")
 	use("tpope/vim-fugitive")
 	use("kdheepak/lazygit.nvim")
@@ -50,5 +52,5 @@ return require("packer").startup(function(use)
 
 	use("sakshamgupta05/vim-todo-highlight")
 
-  use { "catppuccin/nvim", as = "catppuccin" }
+	use({ "mbbill/undotree" })
 end)
