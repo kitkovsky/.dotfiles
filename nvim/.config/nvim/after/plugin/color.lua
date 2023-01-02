@@ -1,6 +1,6 @@
 local CATTPUCCIN = "cattpuccin"
 local GRUVBOX_BABY = "gruvbox"
-local current_colorscheme = CATTPUCCIN
+local current_colorscheme = GRUVBOX_BABY
 
 vim.opt.background = "dark"
 
