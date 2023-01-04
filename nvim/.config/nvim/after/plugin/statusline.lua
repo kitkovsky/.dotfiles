@@ -104,11 +104,4 @@ M.set_status = function(line)
 	status_line = line
 end
 
---vim.api.nvim_exec([[
---augroup THEPRIMEAGEN_STATUSLINE
---autocmd!
---autocmd BufWritePre * :lua require("theprimeagen.statusline").on_write()
---augroup END
---]], false)
-
 return M

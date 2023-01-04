@@ -16,7 +16,7 @@ require("nvim-treesitter.configs").setup({
 		"rust",
 	},
 
-	sync_install = true,
+	sync_install = false,
 
 	highlight = {
 		enable = true,

@@ -2,10 +2,11 @@ local CATTPUCCIN = "cattpuccin"
 local GRUVBOX_BABY = "gruvbox"
 local current_colorscheme = GRUVBOX_BABY
 
-vim.opt.background = "dark"
+vim.o.background = "dark"
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 if current_colorscheme == GRUVBOX_BABY then
-	vim.g.gruvbox_invert_selection = "0"
 	vim.cmd("colorscheme gruvbox")
 end
 
@@ -24,3 +25,6 @@ if current_colorscheme == CATTPUCCIN then
 
 	vim.cmd("colorscheme catppuccin")
 end
+
+
+vim.cmd("highlight SignColumn guibg=NONE")
