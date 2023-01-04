@@ -15,9 +15,7 @@ return require("packer").startup(function(use)
 	-- lsp and treesitter
 	use({
 		"nvim-treesitter/nvim-treesitter",
-		run = function()
-			require("nvim-treesitter.install").update({ with_sync = true })
-		end,
+		run = ":TSUpdate",
 	})
 	use("nvim-treesitter/playground")
 	use("nvim-treesitter/nvim-treesitter-context")
