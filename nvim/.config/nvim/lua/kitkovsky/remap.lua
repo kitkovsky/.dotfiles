@@ -23,9 +23,6 @@ nnoremap("<leader>k", "<cmd>cprev<CR>zz")
 nnoremap("<leader>co", "<cmd>copen<CR>")
 nnoremap("<leader>cq", "<cmd>cclose<CR>")
 
--- neoformat
-nnoremap("<leader>nf", "<cmd>Neoformat<CR>")
-
 -- Y yanks to the end of the line
 nnoremap("Y", "y$")
 

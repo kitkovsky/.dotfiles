@@ -27,6 +27,7 @@ return require("packer").startup(function(use)
 	use("ckipp01/stylua-nvim")
 
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
+	use("nvim-treesitter/nvim-treesitter-context")
 
 	use("ThePrimeagen/harpoon")
 	use("mbbill/undotree")

@@ -1,17 +1,9 @@
 local actions = require("telescope.actions")
 
--- local previewers = require("telescope.previewers")
--- local builtin = require("telescope.builtin")
-
 require("telescope").setup({
 	defaults = {
-		-- file_sorter = require("telescope.sorters").get_fzy_sorter,
 		prompt_prefix = "🔍 ",
 		color_devicons = true,
-
-		-- file_previewer = require("telescope.previewers").vim_buffer_cat.new,
-		-- grep_previewer = require("telescope.previewers").vim_buffer_vimgrep.new,
-		-- qflist_previewer = require("telescope.previewers").vim_buffer_qflist.new,
 
 		mappings = {
 			i = {
@@ -25,13 +17,6 @@ require("telescope").setup({
 			},
 		},
 	},
-
-	-- extensions = {
-	-- 	fzy_native = {
-	-- 		override_generic_sorter = false,
-	-- 		override_file_sorter = true,
-	-- 	},
-	-- },
 })
 
 local nnoremap = require("kitkovsky.keymap").nnoremap
@@ -71,6 +56,7 @@ nnoremap("<leader>blg", function()
 	builtin.live_grep({ grep_open_files = true })
 end)
 nnoremap("<leader>flg", function()
+	vim.cmd("TSDisable highlight")
 	builtin.current_buffer_fuzzy_find()
 end)
 nnoremap("<leader>of", function()
@@ -79,3 +65,11 @@ end)
 nnoremap("<leader>wd", function()
 	builtin.diagnostics()
 end)
+
+vim.api.nvim_create_autocmd("User TelescopePreviewerLoaded", {
+	callback = function()
+		vim.schedule(function()
+			vim.cmd("TSEnable highlight")
+		end)
+	end,
+})
