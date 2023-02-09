@@ -204,6 +204,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $HOME/.init.sh
 exec --no-startup-id picom -b
+exec xinput set-prop 11 "libinput Tapping Enabled" 1
 
 # making media keys work
 bindsym XF86AudioPlay exec playerctl play-pause
