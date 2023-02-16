@@ -13,12 +13,12 @@ lsp.ensure_installed({
 	"eslint",
 	"solargraph",
 	"graphql",
-	"sumneko_lua",
+	"lua_ls",
 	"rust_analyzer",
 })
 
 -- fix Undefined global 'vim'
-lsp.configure("sumneko_lua", {
+lsp.configure("lua_ls", {
 	settings = {
 		Lua = {
 			diagnostics = {
