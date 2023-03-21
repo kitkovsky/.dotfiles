@@ -111,13 +111,13 @@ def move_chrome_around() -> None:
 
 def main() -> None:
     I3.lets_go()
-    write("nitrogen --restore")
     polybar("top")
     polybar("top-internal")
     Tmux.lets_go()
     for app in APPS:
         open_app(app)
     move_chrome_around()
+    write("nitrogen --restore")
     pg.hotkey("shift", "winleft", "[")
 
 
