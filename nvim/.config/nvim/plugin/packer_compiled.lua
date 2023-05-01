@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/kitkovsky/.local/share/nvim/site/pack/packer/start/committia.vim",
     url = "https://github.com/rhysd/committia.vim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/kitkovsky/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/kitkovsky/.local/share/nvim/site/pack/packer/start/emmet-vim",
