@@ -1,2 +1,3 @@
 bin/.local/bin/rust-analyzer
+/venv
 */venv
