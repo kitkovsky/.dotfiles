@@ -118,6 +118,7 @@ alias ranger=". ranger"
 alias vim="nvim"
 alias gs="git status"
 alias lg="lazygit"
+alias dc="docker-compose"
 alias luamake="/home/kitkovsky/personal/lua-language-server/3rd/luamake/luamake"
 alias please-help-i-dropped-a-very-important-stash="git log --graph --oneline --decorate --all \$( git fsck --no-reflog | awk '/dangling commit/ {print \$3}' )"
 
