@@ -11,9 +11,6 @@ nnoremap("<C-j>", "<C-w>j")
 nnoremap("<C-k>", "<C-w>k")
 nnoremap("<C-l>", "<C-w>l")
 
--- nerdtree stuff
-nnoremap("<C-n>", "<cmd>Lexplore<CR>")
-
 -- close a buffer with <leader>bd
 nnoremap("<leader>bd", "<cmd>bdelete<CR>")
 
