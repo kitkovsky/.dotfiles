@@ -28,6 +28,14 @@ lsp.configure("lua_ls", {
 	},
 })
 
+lsp.configure("tailwindcss", {
+	settings = {
+		tailwindCSS = {
+			classAttributes = { "class", "className", ".*ClassName" },
+		},
+	},
+})
+
 local cmp = require("cmp")
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
