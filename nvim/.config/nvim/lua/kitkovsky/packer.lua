@@ -38,6 +38,13 @@ return require("packer").startup(function(use)
 	use("github/copilot.vim")
 
 	use({
+		"glacambre/firenvim",
+		run = function()
+			vim.fn["firenvim#install"](0)
+		end,
+	})
+
+	use({
 		"VonHeikemen/lsp-zero.nvim",
 		requires = {
 			-- LSP Support

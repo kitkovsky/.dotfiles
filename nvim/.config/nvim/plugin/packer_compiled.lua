@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/kitkovsky/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
+  firenvim = {
+    loaded = true,
+    path = "/home/kitkovsky/.local/share/nvim/site/pack/packer/start/firenvim",
+    url = "https://github.com/glacambre/firenvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/kitkovsky/.local/share/nvim/site/pack/packer/start/friendly-snippets",
